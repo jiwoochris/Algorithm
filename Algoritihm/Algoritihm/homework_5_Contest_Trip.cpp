@@ -83,10 +83,10 @@ int main() {
 		scanf_s("%s", destination_city, 80);
 
 
-		printf("%d\n", lines);
-		for (int i = 0; i < lines; i++) {
-			printf("%s %d %s %d\n", t[i].depart_city, t[i].depart_time, t[i].arrive_city, t[i].arrive_time);
-		}
+		//printf("%d\n", lines);
+		//for (int i = 0; i < lines; i++) {
+		//	printf("%s %d %s %d\n", t[i].depart_city, t[i].depart_time, t[i].arrive_city, t[i].arrive_time);
+		//}
 
 
 		for (int i = 0; i < city_number; i++) {
@@ -128,7 +128,7 @@ int main() {
 		if (output_arrival == 9999)
 			printf("No connection");
 		else
-			printf("\nDeparture\t%d\t%s\nArrival\t%d\t%s\n", output_departure, start_city, output_arrival, destination_city);
+			printf("\nDeparture\t%04d\t%s\nArrival\t%04d\t%s\n", output_departure, start_city, output_arrival, destination_city);
 	}
 
 	return 0;
