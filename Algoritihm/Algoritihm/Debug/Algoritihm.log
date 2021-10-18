@@ -1,2 +1,4 @@
 ﻿  smart_elephant.cpp
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\smart_elephant.cpp(51,6): warning C4101: 'key_iq' :참조되지 않은 지역 변수입니다.
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\smart_elephant.cpp(50,6): warning C4101: 'key_weight' :참조되지 않은 지역 변수입니다.
   Algoritihm.vcxproj -> C:\Users\정지우\git\Algorithm\Algoritihm\Debug\Algoritihm.exe

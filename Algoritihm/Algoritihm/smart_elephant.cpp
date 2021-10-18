@@ -21,27 +21,27 @@ int main() {
 	struct elephant e[100];
 
 	scanf_s("%d", &n);
-	for (int i = 0; i < n; i++) {
+	for (int i = 1; i <= n; i++) {
 		scanf_s("%d %d", &e[i].weight, &e[i].iq);
-		e[i].index = i+1;
+		e[i].index = i;
 	}
 
 	struct elephant temp;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n - i - 1; j++) {
-			if (e[i].weight > e[i + 1].weight) {
-				temp.weight = e[i].weight;
-				temp.iq = e[i].iq;
-				temp.index = e[i].index;
+	for (int i = 1; i <= n; i++) {
+		for (int j = 1; j <= n - i; j++) {
+			if (e[j].weight > e[j + 1].weight) {
+				temp.weight = e[j].weight;
+				temp.iq = e[j].iq;
+				temp.index = e[j].index;
 
-				e[i].weight = e[i + 1].weight;
-				e[i].iq = e[i + 1].iq;
-				e[i].index = e[i + 1].index;
+				e[j].weight = e[j + 1].weight;
+				e[j].iq = e[j + 1].iq;
+				e[j].index = e[j + 1].index;
 
-				e[i + 1].weight = temp.weight;
-				e[i + 1].iq = temp.iq;
-				e[i + 1].index = temp.index;
+				e[j + 1].weight = temp.weight;
+				e[j + 1].iq = temp.iq;
+				e[j + 1].index = temp.index;
 			}
 		}
 	}
@@ -56,7 +56,7 @@ int main() {
 				large_subset[i][j] = 0;
 			}
 			else if (e[i].weight < e[j].weight && e[i].iq > e[j].iq) {
-				large_subset[i][j] = large_subset[i][j - 1] + 1;
+				large_subset[i][j] = large_subset[i - 1][j - 1] + 1;
 			}
 			else {
 				large_subset[i][j] = max(large_subset[i][j - 1], large_subset[i - 1][j]);
@@ -64,9 +64,13 @@ int main() {
 		}
 	}
 
-
 	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j <= n; j++) {
+		printf("(%d, %d) ", e[i].weight, e[i].iq);
+	}
+	printf("\n");
+
+	for (int i = 0; i <= n; i++) {
+		for (int j = 0; j <= n; j++) {
 			printf("%d ", large_subset[i][j]);
 		}
 		printf("\n");
