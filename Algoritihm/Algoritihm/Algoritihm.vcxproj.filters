@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="smart_elephant.cpp">
+    <ClCompile Include="Saving_Ink_Graph_Algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
