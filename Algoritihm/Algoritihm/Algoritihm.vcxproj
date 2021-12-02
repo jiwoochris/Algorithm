@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Saving_Ink_Graph_Algorithm.cpp" />
+    <ClCompile Include="Lab1.cpp" />
+    <ClCompile Include="Lab2.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

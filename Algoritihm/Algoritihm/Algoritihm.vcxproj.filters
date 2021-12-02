@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Saving_Ink_Graph_Algorithm.cpp">
+    <ClCompile Include="Lab1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

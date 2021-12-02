@@ -1,2 +1,8 @@
-﻿  Saving_Ink_Graph_Algorithm.cpp
+﻿  Lab1.cpp
+  Lab2.cpp
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\Lab2.cpp(29,18): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\Lab2.cpp(40,6): warning C4101: 'new_point' :참조되지 않은 지역 변수입니다.
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\Lab2.cpp(81,17): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+C:\Users\정지우\git\Algorithm\Algoritihm\Algoritihm\Lab2.cpp(82,7): warning C4101: 'str' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
   Algoritihm.vcxproj -> C:\Users\정지우\git\Algorithm\Algoritihm\Debug\Algoritihm.exe
